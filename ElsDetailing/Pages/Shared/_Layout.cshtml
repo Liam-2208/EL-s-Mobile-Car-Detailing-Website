@@ -1,0 +1,59 @@
+@{
+    var pageTitle = ViewData["Title"]?.ToString() ?? "Mobile Car Detailing";
+}
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="description" content="EL’s is a two-person mobile car detailing partnership serving the whole of South West England. Explore detailing services from £50 and get in touch for a quote." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@pageTitle | EL’s Mobile Car Detailing" />
+    <meta property="og:description" content="Mobile car detailing from EL’s, a two-person team serving the whole of South West England. Explore services from £50 and request a quote." />
+    <meta name="twitter:card" content="summary" />
+    <title>@pageTitle | EL’s Mobile Car Detailing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" />
+    <link rel="icon" type="image/png" href="~/images/els-logo.png" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" asp-area="" asp-page="/Index" aria-label="EL’s Mobile Car Detailing home">
+                <img class="brand-logo" src="~/images/els-logo.png" alt="" />
+                <span>EL’s Mobile Detailing</span>
+            </a>
+            <div class="nav-links">
+                <a href="/#about">About</a>
+                <a href="/#services">Services</a>
+                <a href="/#work">Our work</a>
+                <a href="https://www.instagram.com/elscardetailing/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a class="nav-cta contact-link-mobile" href="tel:+447392784236">Contact us <span aria-hidden="true">↗</span></a>
+                <a class="nav-cta contact-link-desktop" href="mailto:Liamfiler@outlook.com">Contact us <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    @RenderBody()
+
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <p>© @DateTime.Now.Year EL’s Mobile Car Detailing · Serving South West England</p>
+            <div class="footer-links">
+                <a class="contact-link-mobile" href="tel:+447392784236">Contact us</a>
+                <a class="contact-link-desktop" href="mailto:Liamfiler@outlook.com">Contact us</a>
+                <a href="https://www.instagram.com/elscardetailing/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="back-to-top" href="#main-content" aria-label="Back to top"><span aria-hidden="true">↑</span></a>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,199 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Mobile Car Detailing across South West England";
+}
+
+<main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Mobile detailing · Across South West England</p>
+            <h1 id="hero-title">A proper clean.<br /><span>Wherever you are.</span></h1>
+            <p class="hero-intro">We’re a two-person team who love cars and take pride in every clean. We bring mobile car detailing to customers across the whole of South West England.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="proof-row" aria-label="Customer rating">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span><strong>5.0 on Google</strong><br /><small>Based on 15 reviews</small></span>
+            </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="A car being cleaned during a mobile detailing service">
+            <img class="hero-photo" src="~/images/detail-hatchback.png" alt="" fetchpriority="high" />
+            <div class="hero-photo-shade"></div>
+            <div class="art-label"><span class="art-label-icon" aria-hidden="true">EL</span><span><strong>Detailing that comes to you</strong><small>Across South West England</small></span></div>
+            <div class="hero-caption"><span class="caption-line"></span> A recent detail by EL’s</div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to learn about EL’s">SCROLL <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="intro-section section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-kicker">CAR CARE, MADE CONVENIENT</div>
+        <div class="intro-grid">
+            <h2 id="about-title">A shared passion<br />for <span>great cars.</span></h2>
+            <div class="intro-copy">
+                <p>We’re Liam and Evie, a small two-person partnership who love cars. Detailing is something we’re passionate about, and we bring that care to every vehicle—big or small.</p>
+                <a class="underlined-link" href="https://www.instagram.com/elscardetailing/" target="_blank" rel="noopener noreferrer">See more photos of our results on Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="section-wrap">
+            <div class="services-heading">
+                <div><div class="section-kicker">FIND YOUR FINISH</div><h2 id="services-title">A clean for every <span>kind of day.</span></h2></div>
+                <p>Starting prices are shown below. Message, email or call us to discuss your vehicle and confirm what’s included.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-number">01 <span aria-hidden="true">✳</span></div>
+                    <div class="service-icon" aria-hidden="true">⌁</div>
+                    <h3>Interior Refresh</h3>
+                    <p>A focused clean for the cabin, including:</p>
+                    <ul class="service-includes">
+                        <li>Vacuum seats, carpets and mats</li>
+                        <li>Wipe down dashboard and interior surfaces</li>
+                        <li>Clean interior windows</li>
+                        <li>Clean door jambs</li>
+                        <li>Seats shampooed and conditioned</li>
+                    </ul>
+                    <p class="service-extra">Pet hair removal may cost extra.</p>
+                    <div class="service-price">From <strong>£50</strong></div>
+                    <a href="#contact" aria-label="Ask about the Interior Refresh">Ask about this service <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card service-card-featured">
+                    <div class="service-number">02 <span aria-hidden="true">✳</span></div>
+                    <div class="service-icon" aria-hidden="true">◌</div>
+                    <h3>Basic Exterior Wash</h3>
+                    <p>A fresh exterior finish, including:</p>
+                    <ul class="service-includes">
+                        <li>Hand wash</li>
+                        <li>Wheel and tyre clean with tyre shine</li>
+                        <li>Exterior windows cleaned</li>
+                        <li>Towel dry</li>
+                    </ul>
+                    <div class="service-price">From <strong>£50</strong></div>
+                    <a href="#contact" aria-label="Ask about the Basic Exterior Wash">Ask about this service <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-number">03 <span aria-hidden="true">✳</span></div>
+                    <div class="service-icon" aria-hidden="true">✧</div>
+                    <h3>Standard Detail</h3>
+                    <p>Interior and exterior care, including:</p>
+                    <ul class="service-includes">
+                        <li>Hand wash, wheel and tyre clean</li>
+                        <li>Tyre shine and exterior windows</li>
+                        <li>Wax and polish</li>
+                        <li>Interior windows cleaned</li>
+                        <li>Interior vacuum and wipe down</li>
+                        <li>Door jambs cleaned</li>
+                    </ul>
+                    <div class="service-price">From <strong>£80</strong></div>
+                    <a href="#contact" aria-label="Ask about the Standard Detail">Ask about this service <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="service-card service-card-premium">
+                    <div class="service-number">04 <span aria-hidden="true">✳</span></div>
+                    <div class="service-icon" aria-hidden="true">✧</div>
+                    <h3>Premium Detail</h3>
+                    <p>A top-to-bottom finish, including:</p>
+                    <ul class="service-includes">
+                        <li>Everything in the Standard Detail</li>
+                        <li>Deep interior clean and conditioning</li>
+                        <li>Leather conditioning where applicable</li>
+                        <li>Dashboard and console detail</li>
+                        <li>Air freshener</li>
+                    </ul>
+                    <div class="service-price">From <strong>£100</strong></div>
+                    <a href="#contact" aria-label="Ask about the Premium Detail">Ask about this service <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <p class="service-note">Prices shown are starting prices. Your final quote may vary depending on your vehicle’s size and condition. Get in touch with your vehicle details and we’ll confirm the price before booking. All vehicle types welcome, big or small. No minimum fees.</p>
+            <div class="addons-panel" aria-labelledby="addons-title">
+                <div>
+                    <div class="section-kicker">OPTIONAL EXTRA</div>
+                    <h3 id="addons-title">Need a little more?</h3>
+                </div>
+                <p><strong>Pet hair removal</strong><br />Available on request. An additional charge may apply, so mention it when asking for your quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-wrap">
+            <div class="work-heading">
+                <div>
+                    <div class="section-kicker">A FEW RECENT DETAILS</div>
+                    <h2 id="work-title">Care that shows<br /><span>in every finish.</span></h2>
+                </div>
+                <a class="underlined-link" href="https://www.instagram.com/elscardetailing/" target="_blank" rel="noopener noreferrer">See more photos of our results on Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="work-grid">
+                <figure class="work-card work-card-tall">
+                    <img src="~/images/detail-bmw.png" alt="Blue BMW after detailing" loading="lazy" decoding="async" />
+                    <figcaption><span>Exterior detail</span><span aria-hidden="true">01</span></figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="~/images/detail-hatchback.png" alt="Dark grey hatchback during an exterior clean" loading="lazy" decoding="async" />
+                    <figcaption><span>Exterior detail</span><span aria-hidden="true">02</span></figcaption>
+                </figure>
+                <figure class="work-card">
+                    <img src="~/images/detail-toyota.png" alt="Blue Toyota after an exterior clean" loading="lazy" decoding="async" />
+                    <figcaption><span>Exterior detail</span><span aria-hidden="true">03</span></figcaption>
+                </figure>
+                <figure class="work-card work-card-wide">
+                    <img src="~/images/detail-citroen.png" alt="White Citroën after an exterior clean" loading="lazy" decoding="async" />
+                    <figcaption><span>Exterior detail</span><span aria-hidden="true">04</span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-section section-wrap" aria-labelledby="review-title">
+        <div class="review-mark" aria-hidden="true">“</div>
+        <div class="review-heading">
+            <div class="section-kicker">KIND WORDS FROM CUSTOMERS</div>
+            <h2 id="review-title">A spotless result.<br /><span>That’s the goal.</span></h2>
+        </div>
+        <div class="review-aside"><span>5.0</span><span class="stars" aria-hidden="true">★★★★★</span><small>15 Google reviews</small></div>
+        <div class="review-grid">
+            <article class="review-card">
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <p>“Detail inside and out was to a high standard on my BMW 320i.”</p>
+                <small>Google review</small>
+            </article>
+            <article class="review-card">
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <p>“They came, did their service, and I came out with my car spotless.”</p>
+                <small>Google review</small>
+            </article>
+            <article class="review-card">
+                <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <p>“Great place and supported me so much when helping me details my car.”</p>
+                <small>Google review</small>
+            </article>
+        </div>
+        <a class="underlined-link review-link" href="https://www.google.com/maps/place/EL%E2%80%99s+Mobile+Car+Detailing/data=!4m2!3m1!1s0x0:0xcec92b2616ac4ada" target="_blank" rel="noopener noreferrer">See all Google reviews &amp; photos <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orb" aria-hidden="true"></div>
+        <div class="section-wrap contact-inner">
+            <div class="section-kicker">LET’S GET YOUR CAR LOOKING GOOD</div>
+            <h2 id="contact-title">Ready for a<br /><span>fresh start?</span></h2>
+            <p>We work every day by appointment, subject to availability. Call, email or message us to arrange a detail.</p>
+            <div class="quote-prompt">
+                <strong>Requesting a quote?</strong>
+                <span>Include your vehicle’s make and model, size, location, current condition and the package you’re interested in. It helps us give you an accurate price.</span>
+            </div>
+            <div class="contact-cards">
+                <a class="contact-card" href="tel:+447392784236"><span class="contact-card-label">CALL LIAM</span><strong>07392 784236</strong></a>
+                <a class="contact-card" href="tel:+447984740989"><span class="contact-card-label">CALL EVIE</span><strong>07984 740989</strong></a>
+                <a class="contact-card" href="mailto:Liamfiler@outlook.com"><span class="contact-card-label">EMAIL LIAM</span><strong>Liamfiler@outlook.com</strong></a>
+                <a class="contact-card" href="mailto:Evielatham@hotmail.com"><span class="contact-card-label">EMAIL EVIE</span><strong>Evielatham@hotmail.com</strong></a>
+            </div>
+            <a class="button button-light" href="https://www.instagram.com/elscardetailing/" target="_blank" rel="noopener noreferrer">Message us on Instagram <span aria-hidden="true">↗</span></a>
+            <div class="contact-meta"><span>Serving the whole of South West England</span></div>
+        </div>
+    </section>
+</main>

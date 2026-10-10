@@ -1,0 +1,16 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<main id="main-content" class="error-page section-wrap">
+    <p class="section-kicker">A TEMPORARY PROBLEM</p>
+    <h1>We couldn’t load that page.</h1>
+    <p>Please try again in a moment, or return to the EL’s homepage.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p class="error-request">Reference: <code>@Model.RequestId</code></p>
+    }
+    <a class="button button-primary" asp-page="/Index">Back to the homepage <span aria-hidden="true">↗</span></a>
+</main>
