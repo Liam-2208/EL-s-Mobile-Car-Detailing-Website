@@ -1,5 +1,16 @@
 # Deploying EL’s Mobile Car Detailing
 
+## Deploy to Render with Docker
+
+This is an ASP.NET Core app, so use Render's Docker runtime rather than its Node.js runtime. In the Render web service settings, configure:
+
+- **Root Directory:** `ElsDetailing` (the folder containing `ElsDetailing.csproj` and `Dockerfile`)
+- **Runtime / Language:** Docker
+- **Dockerfile Path:** `Dockerfile`
+- **Docker Context Directory:** `.`
+
+The Dockerfile builds the app with the .NET 10 SDK image, runs it with the .NET 10 ASP.NET runtime image, and listens on `0.0.0.0:10000`, Render's default web-service port. No Node build or start command is needed. If Render's settings instead use the repository root as the context, set the Dockerfile path to `ElsDetailing/Dockerfile` and the context directory to `ElsDetailing`.
+
 ## Before publishing
 
 - Choose an ASP.NET Core host that supports .NET 10.
